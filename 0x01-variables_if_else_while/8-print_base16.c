@@ -9,22 +9,12 @@
 int main(void)
 {
 	int i;
+	char n;
 
-	for (i = 0; i < 16; i++)
-		if (i == 10)
-			putchar('a');
-		else if (i == 11)
-			putchar('b');
-		else if (i == 12)
-			putchar('c');
-		else if (i == 13)
-			putchar('d');
-		else if (i == 14)
-			putchar('e');
-		else if (i == 15)
-			putchar('f');
-		else
-			putchar(i + '0');
+	for (i = 0; i < 10; i++)
+		putchar(i + '0');
+	for (n = 'a'; n < 'g'; n++)
+		putchar(n);
 	putchar('\n');
 	return (0);
 }
