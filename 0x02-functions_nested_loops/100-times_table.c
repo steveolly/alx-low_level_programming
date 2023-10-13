@@ -21,10 +21,10 @@ void print_times_table(int n)
 					printf("%d,", result);
 				else
 				{
-					printf("%4d", result);
+					printf("%3d", result);
 
 					if (j != n)
-						printf(", ");
+						printf(" , ");
 				}
 			}
 			printf("\n");
