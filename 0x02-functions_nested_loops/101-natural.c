@@ -27,6 +27,15 @@ int main(void)
 		if (mul < 1024)
 			sum = sum + mul;
 	}
+
+	for (i = 0; i < 1024; i++)
+	{
+		int mul15;
+
+		mul15 = 15 * i;
+		if (mul15 < 1024)
+			sum = sum - mul15;
+	}
 	printf("%d\n", sum);
 	return (0);
 }
